@@ -1,0 +1,10 @@
+$(document).ready(()=>{
+  $('.header').on('click','.reglog',function(){
+    $('.login-modal').css('display','block');
+  });
+  $('.login-modal-header').on('click','.login-close',function(){
+    $('.login-modal').css('display','none');
+  })
+  $('.login-modal-body').on('click','.reglog',function(){
+  })
+});

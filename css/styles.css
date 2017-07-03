@@ -1,0 +1,159 @@
+body{
+  margin:0;
+  padding: 0;
+  height:100%;
+}
+.header{
+  width:100%;
+  height: 8%;
+  background:  #f44242;
+}
+.logo{
+  float:left;
+  color: #0F0F0F;
+  font-family:    logo, Helvetica, sans-serif;
+  font-size:      8vh;
+  font-weight:    bold;
+  margin-left: 3vh;
+}
+.login-modal-text{
+  float:left;
+  color: #0F0F0F;
+  font-family:    logo, Helvetica, sans-serif;
+  font-size:      4vh;
+  font-weight:    bold;
+}
+.reglog{
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);/* XXX:  */
+  float:right;
+  font-family:    reglog, Helvetica, sans-serif;
+  font-size:      4vh;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: white;
+  border-radius: 2px;
+  margin-right: 3vh;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(54,54,54,1);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(54,54,54,1);
+  box-shadow: 0px 0px 10px 1px rgba(54,54,54,1);
+  cursor: hand;
+  cursor: pointer;
+}
+
+.login-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.login-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: loginmodalanimate;
+    -webkit-animation-duration: 0.4s;
+    animation-name: loginmodalanimate;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes loginmodalanimate {
+    from {top:-30%; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes loginmodalanimate {
+    from {top: -30%; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.login-close {
+    color: red;
+    float: right;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.login-close:hover,
+.login-close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.login-modal-header {
+    padding: 2px 16px;
+    color: white;
+}
+
+.login-modal-body {padding: 5vh; 10vh;}
+
+.-login-modal-footer {
+    padding: 5 10vh;
+    color: white;
+}
+.login-modal-input {
+  position: relative;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(0,142,198,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.modal-signin-button{
+    position: relative;
+    left:50%;
+    transform: translatex(-50%);/* XXX:  */
+    font-family:    reglog, Helvetica, sans-serif;
+    font-size:      4vh;
+    padding: 2px 5px;
+    background: white;
+    border-radius: 2px;
+    text-align: center;
+    cursor: hand;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.modal-text-simple{
+  width:100%;
+  text-align:center;
+  color:#999;
+  margin-top:5px;
+}
+@font-face { font-family: logo; src: url('../fonts/Logo.ttf'); }
+@font-face { font-family: reglog; src: url('../fonts/Reglog.ttf'); }
