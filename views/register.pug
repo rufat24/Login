@@ -1,0 +1,20 @@
+extends layout.pug
+block body
+  .register-body
+    .register-header="Register"
+    hr
+    -if(errors.length)
+     -for (var i = 0; i < errors.length; i++)
+      .register-alert=errors[i].msg
+    div
+      .register-text="Username:"
+      input#username.register-input(value=username)
+      .register-text="Password:"
+      input#password.register-input
+      .register-text="Confirm password:"
+      input#password2.register-input
+      .register-text="Email:"
+      input#email.register-input(value=email)
+      .register-text="Full Name:"
+      input#fullname.register-input(value=name)
+      .register-submit="Register"

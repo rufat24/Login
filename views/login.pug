@@ -1,29 +1,19 @@
-html
-  head
-    title=title
-    script( src="https://code.jquery.com/jquery-3.2.1.js"
-    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous")
-    script(src="/js/scripts.js")
-    link(rel="stylesheet" href="/css/styles.css")
-  body
-    .header
-      .logo="Abi"
-      #signinform.reglog="Sign In"
-    #signiNmodal.login-modal
+extends layout.pug
+block body
+    #signinmodal.login-modalS
       .login-modal-content
         .login-modal-header
           span(class="login-close")="x"
         .login-modal-body
-           .login-modal-text="Username:"
-           input.login-modal-input
-           .login-modal-text="Password"
-           input.login-modal-input
-           .modal-signin-button(style="background:#f44242")="Sign In"
-           .modal-text-simple="or"
-           .modal-signin-button(style="background:#4286f4;margin-top:5px;")="Register"
-           hr
-           .modal-signin-button(style="background:#3b5998;margin-top:5px; color:#EEE")="Facebook"
-           .modal-signin-button(style="background:#d9534f;margin-top:5px; color:#EEE")="Gmail  "
+         .login-modal-text="Username:"
+         input#username.login-modal-input
+         .login-modal-text="Password:"
+         input#password.login-modal-input
+         #signin.modal-signin-button(style="background:#f44242")="Sign In"
+         .modal-text-simple="or if you did not Sign Up  "
+         #register.modal-signin-button(style="background:#4286f4;margin-top:5px;")="Register"
+         hr
+         #fb.modal-signin-button(style="background:#3b5998;margin-top:5px; color:#EEE")="Facebook"
+         #gmail.modal-signin-button(style="background:#d9534f;margin-top:5px; color:#EEE")="Gmail  "
 
         .login-modal-footer
